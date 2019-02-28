@@ -1,7 +1,8 @@
-﻿using Android.App;
+﻿using System;
+using Android.App;
 using Android.OS;
 using Android.Support.V7.App;
-using Android.Runtime;
+using Android.Support.V7.Widget;
 using Android.Widget;
 
 namespace ExchangeRate
@@ -14,6 +15,14 @@ namespace ExchangeRate
             base.OnCreate(savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
+
+            InitCurrencyDropDown();
+        }
+
+        private void InitCurrencyDropDown()
+        {
+            var dropDown = FindViewById<Spinner>(Resource.Id.spinnerCurrencyTypes);
+            dropDown.
         }
     }
 }
