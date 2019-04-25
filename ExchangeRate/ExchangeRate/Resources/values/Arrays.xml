@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<resources>
-  <string name="app_name">Exchange Rate</string>
-  <string name="action_settings">Settings</string>
-  <string name="radioBtnBuy">Buying</string>
-  <string name="radioBtnSell">Selling</string>
-</resources>

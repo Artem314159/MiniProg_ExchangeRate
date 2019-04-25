@@ -1,3 +1,8 @@
 
-ExchangeRate/ExchangeRate/bin/Debug
-ExchangeRate/.vs
+ExchangeRate2/ExchangeRate2/bin/Debug
+ExchangeRate2/.vs
+/ExchangeRate2/ExchangeRate2/obj
+/ExchangeRate2/ExchangeRate2/ExchangeRate2/bin
+/ExchangeRate2/ExchangeRate2/ExchangeRate2/obj
+/ExchangeRate2/ExchangeRate2/ExchangeRate2.Android/obj
+/ExchangeRate2/ExchangeRate2/ExchangeRate2.Android/bin
