@@ -25,7 +25,13 @@ namespace ExchangeRate2
         public MainPage()
         {
             InitializeComponent();
-            var grid = new Grid() { Margin = 10 };
+            AddCurrencyButtons();
+            AddScrollView();
+        }
+
+        private void AddCurrencyButtons()
+        {
+            var grid = new Grid() {RowDefinitions = new RowDefinitionCollection() { }, Margin = 10 };
             int collInd = 0;
             foreach (Currency currency in Enum.GetValues(typeof(Currency)))
             {
@@ -38,9 +44,20 @@ namespace ExchangeRate2
             MainLayout.Children.Add(grid);
         }
 
+        private void AddScrollView()
+        {
+            var list = new ListView() { };
+            //list.ItemsSource =  
+        }
+
         private void Button_Click(object sender, EventArgs e, Currency currency)
         {
             DisplayAlert("Title", currency.ToString(), "Ok");
+        }
+
+        private void RefreshData(object sender, EventArgs e)
+        {
+            DisplayAlert("Title", "Refreshing was successful.", "Ok");
         }
     }
 }

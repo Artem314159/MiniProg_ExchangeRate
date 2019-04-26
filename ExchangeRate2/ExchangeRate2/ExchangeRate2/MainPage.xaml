@@ -4,17 +4,16 @@
              xmlns:local="clr-namespace:ExchangeRate2"
              x:Class="ExchangeRate2.MainPage">
 
-    <StackLayout x:Name="MainLayout">
-        <!--Grid Margin="10">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <Button x:Name="EuroBtn" Clicked="Button_Click" Grid.Column="0" Text="€"/>
-            <Button x:Name="DollarBtn" Clicked="Button_Click" Grid.Column="1" Text="$"/>
-            <Button x:Name="RubleBtn" Clicked="Button_Click" Grid.Column="2" Text="₽"/>
-        </Grid-->
-    </StackLayout>
+    <AbsoluteLayout>
+        <StackLayout x:Name="MainLayout" BackgroundColor="Bisque">
 
+        </StackLayout>
+        <StackLayout AbsoluteLayout.LayoutBounds="0.5, 1, 1, 1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="Aqua" HorizontalOptions="Center" VerticalOptions="End">
+            <Image x:Name="RefreshBtn" Margin="0, 0, 0, 20" Source="Refresh.png" WidthRequest="60" HeightRequest="60">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="RefreshData" NumberOfTapsRequired="1"/>
+                </Image.GestureRecognizers>
+            </Image>
+        </StackLayout>
+    </AbsoluteLayout>
 </ContentPage>
